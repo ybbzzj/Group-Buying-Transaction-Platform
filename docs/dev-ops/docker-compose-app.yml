@@ -21,11 +21,11 @@ services:
       - SERVER_PORT=8091
       - SPRING_DATASOURCE_USERNAME=root
       - SPRING_DATASOURCE_PASSWORD=123456
-      - SPRING_DATASOURCE_URL=jdbc:mysql://{$Your_MySQL_IP}:{$Your_MySQL_Port}/group_buy_market?useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&serverTimezone=Asia/Shanghai&useSSL=true
+      - SPRING_DATASOURCE_URL=jdbc:mysql://127.0.0.1:3306/group_buy_market?useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&serverTimezone=Asia/Shanghai&useSSL=true
       - SPRING_DATASOURCE_DRIVER_CLASS_NAME=com.mysql.cj.jdbc.Driver
       - SPRING_HIKARI_POOL_NAME=Retail_HikariCP
-      - REDIS_SDK_CONFIG_HOST={$Your_Redis_IP}
-      - REDIS_SDK_CONFIG_PORT={$Your_Redis_Port}
+      - REDIS_SDK_CONFIG_HOST=127.0.0.1
+      - REDIS_SDK_CONFIG_PORT=6379
     volumes:
       - ./log:/data/log
     logging:
