@@ -1,10 +1,11 @@
 # 拉取代码
-```bash      
+```bash
+cd /
 git clone https://github.com/ybbzzj/Group-Buying-Transaction-Platform.git
 ```
 # Maven构建
 ```bash
-cd group-buy-plus
+cd Group-Buying-Transaction-Platform
 mvn clean install
 ```
 # 构建Docker镜像
@@ -15,7 +16,10 @@ source build.sh
 ```
 # 启动容器
 ```bash
-cd /group-buy-plus/docs/dev-ops
+cd /Group-Buying-Transaction-Platform/docs/dev-ops
+vim docker-compose-app.yml
+# 修改MySQL和Redis的IP和Port
 docker-compose -f docker-compose-app.yml up -d
 ```
+
 
