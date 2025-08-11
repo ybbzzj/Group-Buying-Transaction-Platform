@@ -17,13 +17,13 @@
 
 ## 核心实现流程图
 链式多分支规则树<br>
-![](./assets/img1.png)
+![](./assets/img1.png)<br>
 活动领域ActionNode设计<br>
-![](./assets/img2.png)
+![](./assets/img2.png)<br>
 基于Redis发布/订阅的动态配置中心<br>
-![](./assets/img3.png)
+![](./assets/img3.png)<br>
 责任链<br>
-![](./assets/img4.png)
+![](./assets/img4.png)<br>
 
 ## 数据库建表
 [详见数据库建表](./docs/dev-ops/mysql/sql/group_buy_plus.sql)
