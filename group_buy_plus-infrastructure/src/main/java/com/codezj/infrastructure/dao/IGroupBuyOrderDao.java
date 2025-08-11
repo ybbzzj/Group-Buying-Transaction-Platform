@@ -2,6 +2,7 @@ package com.codezj.infrastructure.dao;
 
 import com.codezj.infrastructure.dao.po.GroupBuyOrder;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 import java.util.Set;
@@ -52,20 +53,20 @@ public interface IGroupBuyOrderDao {
     /**
      * 查询拼团进行中的订单
      */
-    List<GroupBuyOrder> queryGroupBuyProgressByTeamIds(Set<String> teamIds);
+    List<GroupBuyOrder> queryGroupBuyProgressByTeamIds(@Param("teamIds") Set<String> teamIds);
 
     /**
      * 查询拼团进行中的订单数量
      */
-    Integer queryAllTeamCount(Set<String> teamIds);
+    Integer queryAllTeamCount(@Param("teamIds") Set<String> teamIds);
 
     /**
      * 查询拼团进行中的订单完成数量
      */
-    Integer queryAllTeamCompleteCount(Set<String> teamIds);
+    Integer queryAllTeamCompleteCount(@Param("teamIds") Set<String> teamIds);
 
     /**
      * 查询拼团进行中的订单用户数量
      */
-    Integer queryAllUserCount(Set<String> teamIds);
+    Integer queryAllUserCount(@Param("teamIds") Set<String> teamIds);
 }
