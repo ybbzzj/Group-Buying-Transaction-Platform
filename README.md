@@ -3,7 +3,7 @@
 <div align="center">
     <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/ybbzzj/Group-Buying-Transaction-Platform">
     <img src="https://img.shields.io/badge/Spring%20Boot-2.7.12-green?logo=springboot" alt="Spring Boot">
-
+    <img alt="GitHub branch status" src="https://img.shields.io/github/checks-status/ybbzzj/Group-Buying-Transaction-Platform/master">
 </div>
 
 ## 项目介绍
