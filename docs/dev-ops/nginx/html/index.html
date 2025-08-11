@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>拼团详情</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 状态栏 -->
+    <div class="status-bar">
+        <span class="time">9:41</span>
+        <span class="battery">100%</span>
+    </div>
+
+    <!-- 导航栏 -->
+    <div class="nav-bar">
+        <div class="back-btn">
+            <svg t="1754881488453" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1480" width="150" height="150">
+                <path d="M624.788992 204.047974 585.205965 164.464026 219.560038 530.185011 585.205965 895.864013 624.788992 856.280986 298.663014 530.16105Z" p-id="1481">
+                </path>
+            </svg>
+        </div>
+        <div class="title">拼团详情</div>
+        <div class="share-btn">
+            <svg t="1754882092937" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="10504" width="150" height="150">
+                <path d="M512 939.804444c-57.612929 0-113.570909-11.274343-166.322424-33.616161-50.889697-21.514343-96.504242-52.337778-135.809293-91.539394C170.666667 775.447273 139.843232 729.729293 118.328889 678.839596 96.193939 626.191515 84.816162 570.233535 84.816162 512.620606s11.274343-113.570909 33.616161-166.322424c21.514343-50.889697 52.337778-96.504242 91.539394-135.809293 39.201616-39.201616 84.919596-70.025051 135.809293-91.539394 52.648081-22.238384 108.606061-33.616162 166.322424-33.616162h1.034344l-0.103435 57.923233h-0.930909c-98.676364 0-191.353535 38.374141-261.068282 108.192323-69.818182 69.818182-108.295758 162.495354-108.295758 261.171717s38.374141 191.353535 108.192323 261.068283c69.714747 69.818182 162.495354 108.192323 261.068283 108.192323 98.572929 0 191.250101-38.374141 261.068283-108.088889C842.78303 704.077576 881.260606 611.400404 881.260606 512.827475h57.923232c0 57.612929-11.377778 113.570909-33.616161 166.21899-21.514343 50.889697-52.337778 96.504242-91.539394 135.705858s-84.919596 69.921616-135.705859 91.43596c-52.751515 22.341818-108.606061 33.616162-166.322424 33.616161zM938.149495 352.711111h-57.923232V145.73899H672.530101v-57.923232H938.149495V352.711111z m0 0" fill="#333333" p-id="10505"></path><path d="M888.371717 96.012929l40.96 40.96L560.484848 505.806869l-40.96-40.96L888.371717 96.012929z m0 0" fill="#333333" p-id="10506">
+                </path>
+            </svg>
+        </div>
+    </div>
+
+    <!-- 轮播图 -->
+    <div class="carousel-container">
+        <div class="carousel-wrapper">
+            <div class="carousel-slide">
+                <img src="http://codezj.top/wp-content/uploads/2025/08/01.png" alt="商品图片1">
+            </div>
+            <div class="carousel-slide">
+                <img src="http://codezj.top/wp-content/uploads/2025/08/03.jpg" alt="商品图片2">
+            </div>
+            <div class="carousel-slide">
+                <img src="http://codezj.top/wp-content/uploads/2025/08/02.jpg" alt="商品图片3">
+            </div>
+        </div>
+        <div class="carousel-indicators">
+            <span class="indicator active"></span>
+            <span class="indicator"></span>
+            <span class="indicator"></span>
+        </div>
+    </div>
+
+    <!-- 价格信息 -->
+    <div class="price-info">
+        <div class="price-row">
+            <span class="current-price">¥99.00</span>
+            <span class="original-price">¥199.00</span>
+        </div>
+        <div class="sales-info">
+            <span>已拼1288件 | 2人团</span>
+            <span class="countdown">距结束 <span id="timer">23:59:59</span></span>
+        </div>
+    </div>
+
+    <!-- 商品信息 -->
+    <div class="product-info">
+        <h2 class="product-title">超值优惠装 新款时尚百搭休闲鞋</h2>
+        <div class="product-specs">
+            <div class="spec-item">颜色分类：黑色</div>
+            <div class="spec-item">上市时间：2022-11</div>
+            <div class="spec-item">像素：2151万</div>
+            <div class="spec-item">重量：445g</div>
+            <div class="spec-item">数量：1件</div>
+        </div>
+    </div>
+
+    <!-- 拼团信息 -->
+    <div class="group-info">
+        <h3 class="section-title">当前拼团</h3>
+        <div class="group-member">
+            <div class="avatar">头像</div>
+            <div class="member-info">
+                <div class="member-name">张三（团长）</div>
+                <div class="group-status">还差1人，剩余<span id="group-timer">23:45:30</span></div>
+            </div>
+            <button class="join-btn">去拼团</button>
+        </div>
+    </div>
+
+    <!-- 底部操作栏 -->
+    <div class="bottom-bar">
+        <button class="buy-alone-btn">¥129 单独购买</button>
+        <button class="start-group-btn">¥99 发起拼团</button>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

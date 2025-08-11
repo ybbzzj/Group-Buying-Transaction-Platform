@@ -1,0 +1,72 @@
+<svg width="390" height="844" viewBox="0 0 390 844" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 状态栏 -->
+  <rect width="390" height="44" fill="#FFFFFF"/>
+  <text x="20" y="27" font-family="Arial" font-size="14" fill="#000000">9:41</text>
+  <text x="330" y="27" font-family="Arial" font-size="14" fill="#000000">100%</text>
+  
+  <!-- 导航栏 -->
+  <rect y="44" width="390" height="50" fill="#FFFFFF"/>
+  <text x="195" y="74" font-family="Arial" font-size="18" fill="#333333" text-anchor="middle">确认支付</text>
+  <path d="M20 69 L35 54 L20 39" stroke="#333333" stroke-width="2" fill="none"/>
+  
+  <!-- 订单信息 -->
+  <rect y="94" width="390" height="120" fill="#FFFFFF"/>
+  <text x="20" y="124" font-family="Arial" font-size="16" fill="#333333" font-weight="bold">订单信息</text>
+  <text x="20" y="154" font-family="Arial" font-size="14" fill="#666666">订单编号：202311150001</text>
+  <text x="20" y="184" font-family="Arial" font-size="14" fill="#666666">下单时间：2023-11-15 15:30:45</text>
+  
+  <!-- 商品信息 -->
+  <rect y="214" width="390" height="100" fill="#FFFFFF"/>
+  <rect x="20" y="234" width="80" height="80" rx="4" fill="#F5F5F5"/>
+  <text x="60" y="274" font-family="Arial" font-size="12" fill="#999999" text-anchor="middle">商品图片</text>
+  <text x="110" y="254" font-family="Arial" font-size="14" fill="#333333" font-weight="bold">超值优惠装 新款时尚百搭休闲鞋</text>
+  <text x="110" y="274" font-family="Arial" font-size="12" fill="#666666">颜色：黑色 | 尺码：39</text>
+  <text x="110" y="294" font-family="Arial" font-size="12" fill="#666666">数量：1件</text>
+  <text x="350" y="274" font-family="Arial" font-size="16" fill="#FF4D4F" text-anchor="end">¥99.00</text>
+  
+  <!-- 拼团信息 -->
+  <rect y="314" width="390" height="80" fill="#FFFFFF"/>
+  <text x="20" y="344" font-family="Arial" font-size="16" fill="#333333" font-weight="bold">拼团信息</text>
+  <text x="20" y="374" font-family="Arial" font-size="14" fill="#666666">2人团 | 还差1人</text>
+  <text x="200" y="374" font-family="Arial" font-size="14" fill="#FF4D4F">有效期：24小时</text>
+  
+  <!-- 收货地址 -->
+  <rect y="394" width="390" height="100" fill="#FFFFFF"/>
+  <text x="20" y="424" font-family="Arial" font-size="16" fill="#333333" font-weight="bold">收货地址</text>
+  <text x="20" y="454" font-family="Arial" font-size="14" fill="#333333">李四 13800138000</text>
+  <text x="20" y="474" font-family="Arial" font-size="14" fill="#666666">北京市朝阳区某某路123号某某小区1号楼1单元101</text>
+  <path d="M360 434 L370 444 L360 454" stroke="#999999" stroke-width="2" fill="none"/>
+  
+  <!-- 支付方式 -->
+  <rect y="494" width="390" height="200" fill="#FFFFFF"/>
+  <text x="20" y="524" font-family="Arial" font-size="16" fill="#333333" font-weight="bold">支付方式</text>
+  
+  <!-- 微信支付 -->
+  <rect x="20" y="544" width="350" height="50" rx="8" fill="#F5F5F5"/>
+  <circle cx="45" cy="569" r="15" fill="#25D366"/>
+  <text x="45" y="574" font-family="Arial" font-size="10" fill="#FFFFFF" text-anchor="middle">微信</text>
+  <text x="80" y="574" font-family="Arial" font-size="14" fill="#333333">微信支付</text>
+  <circle cx="350" cy="569" r="10" stroke="#FF4D4F" stroke-width="2" fill="#FFFFFF"/>
+  <circle cx="350" cy="569" r="5" fill="#FF4D4F"/>
+  
+  <!-- 支付宝 -->
+  <rect x="20" y="604" width="350" height="50" rx="8" fill="#F5F5F5"/>
+  <circle cx="45" cy="629" r="15" fill="#1677FF"/>
+  <text x="45" y="634" font-family="Arial" font-size="10" fill="#FFFFFF" text-anchor="middle">支付宝</text>
+  <text x="80" y="634" font-family="Arial" font-size="14" fill="#333333">支付宝</text>
+  <circle cx="350" cy="629" r="10" stroke="#CCCCCC" stroke-width="2" fill="#FFFFFF"/>
+  
+  <!-- 银行卡支付 -->
+  <rect x="20" y="664" width="350" height="50" rx="8" fill="#F5F5F5"/>
+  <circle cx="45" cy="689" r="15" fill="#FF6B22"/>
+  <text x="45" y="694" font-family="Arial" font-size="10" fill="#FFFFFF" text-anchor="middle">银行卡</text>
+  <text x="80" y="694" font-family="Arial" font-size="14" fill="#333333">银行卡支付</text>
+  <circle cx="350" cy="689" r="10" stroke="#CCCCCC" stroke-width="2" fill="#FFFFFF"/>
+  
+  <!-- 底部支付栏 -->
+  <rect y="744" width="390" height="100" fill="#FFFFFF" stroke="#EEEEEE" stroke-width="1"/>
+  <text x="20" y="784" font-family="Arial" font-size="14" fill="#333333">实付款：</text>
+  <text x="80" y="784" font-family="Arial" font-size="20" fill="#FF4D4F" font-weight="bold">¥99.00</text>
+  <rect x="200" y="764" width="170" height="50" rx="25" fill="#FF4D4F"/>
+  <text x="285" y="794" font-family="Arial" font-size="16" fill="#FFFFFF" text-anchor="middle">确认支付</text>
+</svg>

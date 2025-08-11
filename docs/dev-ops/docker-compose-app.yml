@@ -1,0 +1,42 @@
+version: '3.8'
+services:
+  # 部署前端项目
+  nginx:
+    image: registry.cn-hangzhou.aliyuncs.com/xfg-studio/nginx:latest
+    container_name: nginx
+    restart: always
+    ports:
+      - '443:443'
+      - '80:80'
+    volumes:
+      - ./nginx/html:/usr/share/nginx/html
+    privileged: true
+  group-buy-plus:
+    image: baozhongjie/group-buy-plus:1.0
+    container_name: group-buy-plus
+    restart: on-failure
+    ports:
+      - "8091:8091"
+    environment:
+      - TZ=PRC
+      - SERVER_PORT=8091
+      - SPRING_DATASOURCE_USERNAME=root
+      - SPRING_DATASOURCE_PASSWORD=123456
+      - SPRING_DATASOURCE_URL=jdbc:mysql://116.62.163.130:13306/group_buy_market?useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&serverTimezone=Asia/Shanghai&useSSL=true
+      - SPRING_DATASOURCE_DRIVER_CLASS_NAME=com.mysql.cj.jdbc.Driver
+      - SPRING_HIKARI_POOL_NAME=Retail_HikariCP
+      - REDIS_SDK_CONFIG_HOST=116.62.163.130
+      - REDIS_SDK_CONFIG_PORT=16379
+    volumes:
+      - ./log:/data/log
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+    networks:
+      - my-network
+
+networks:
+  my-network:
+    driver: bridge

@@ -1,0 +1,43 @@
+<svg width="390" height="844" viewBox="0 0 390 844" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1677FF;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#1677FF;stop-opacity:0.3" />
+    </linearGradient>
+  </defs>
+  <rect width="390" height="844" fill="url(#grad1)"/>
+  
+  <!-- 状态栏 -->
+  <rect width="390" height="44" fill="#FFFFFF" opacity="0.9"/>
+  <text x="20" y="27" font-family="Arial" font-size="14" fill="#000000">9:41</text>
+  <text x="330" y="27" font-family="Arial" font-size="14" fill="#000000">100%</text>
+  
+  <!-- 导航栏 -->
+  <rect y="44" width="390" height="50" fill="#FFFFFF"/>
+  <text x="195" y="74" font-family="Arial" font-size="18" fill="#333333" text-anchor="middle">登录</text>
+  <path d="M20 69 L35 54 L20 39" stroke="#333333" stroke-width="2" fill="none"/>
+  
+  <!-- Logo区域 -->
+  <circle cx="195" cy="170" r="60" fill="#1677FF"/>
+  <text x="195" y="170" font-family="Arial" font-size="20" fill="#FFFFFF" text-anchor="middle" font-weight="bold">拼团Plus</text>
+  
+  <!-- 登录表单 -->
+  <rect x="40" y="260" width="310" height="60" rx="8" fill="#FFFFFF" stroke="#EEEEEE" stroke-width="1"/>
+  <text x="60" y="295" font-family="Arial" font-size="16" fill="#999999">用户名</text>
+  
+  <rect x="40" y="340" width="310" height="60" rx="8" fill="#FFFFFF" stroke="#EEEEEE" stroke-width="1"/>
+  <text x="60" y="375" font-family="Arial" font-size="16" fill="#999999">密码</text>
+  <text x="310" y="375" font-family="Arial" font-size="14" fill="#1677FF" text-anchor="end">忘记密码?</text>
+  
+  <!-- 登录按钮 -->
+  <rect x="40" y="420" width="310" height="50" rx="25" fill="#1677FF"/>
+  <text x="195" y="450" font-family="Arial" font-size="18" fill="#FFFFFF" text-anchor="middle" font-weight="bold">登录</text>
+  
+  <!-- 底部协议 -->
+  <text x="195" y="730" font-family="Arial" font-size="12" fill="#999999" text-anchor="middle">登录即表示同意</text>
+  <text x="195" y="750" font-family="Arial" font-size="12" fill="#FF4D4F" text-anchor="middle">《用户协议》和《隐私政策》</text>
+  
+  <!-- 注册入口 -->
+  <text x="195" y="800" font-family="Arial" font-size="14" fill="#333333" text-anchor="middle">还没有账号？<tspan fill="#FF4D4F">立即注册</tspan></text>
+</svg>
