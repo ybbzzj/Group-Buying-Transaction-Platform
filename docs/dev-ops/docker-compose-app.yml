@@ -1,6 +1,5 @@
 version: '3.8'
 services:
-  # 部署前端项目
   nginx:
     image: registry.cn-hangzhou.aliyuncs.com/xfg-studio/nginx:latest
     container_name: nginx
@@ -22,11 +21,11 @@ services:
       - SERVER_PORT=8091
       - SPRING_DATASOURCE_USERNAME=root
       - SPRING_DATASOURCE_PASSWORD=123456
-      - SPRING_DATASOURCE_URL=jdbc:mysql://116.62.163.130:13306/group_buy_market?useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&serverTimezone=Asia/Shanghai&useSSL=true
+      - SPRING_DATASOURCE_URL=jdbc:mysql://{$Your_MySQL_IP}:{$Your_MySQL_Port}/group_buy_market?useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&serverTimezone=Asia/Shanghai&useSSL=true
       - SPRING_DATASOURCE_DRIVER_CLASS_NAME=com.mysql.cj.jdbc.Driver
       - SPRING_HIKARI_POOL_NAME=Retail_HikariCP
-      - REDIS_SDK_CONFIG_HOST=116.62.163.130
-      - REDIS_SDK_CONFIG_PORT=16379
+      - REDIS_SDK_CONFIG_HOST={$Your_Redis_IP}
+      - REDIS_SDK_CONFIG_PORT={$Your_Redis_Port}
     volumes:
       - ./log:/data/log
     logging:
